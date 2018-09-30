@@ -1,4 +1,4 @@
-# ddns cloudflare
+# DDNS Cloudflare
 this will help you change your A record to your cloudflare domain / sub domain by updating it dynamicaly when it's change
 it's suitable for raspberry / pine64 user that need to remote it but have dynamic IP, almost same with https://ngrok.com/ but using your own domain
 
@@ -28,6 +28,7 @@ it's suitable for raspberry / pine64 user that need to remote it but have dynami
 # Execution
 To execute this script you can run this in terminal
 `mv cfddns.py /usr/bin/`
+
 `python /usr/bin/cfddns.py > /dev/null 2>&1 & disown`
 
 To make it autorun
