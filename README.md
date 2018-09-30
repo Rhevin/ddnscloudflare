@@ -24,12 +24,15 @@ it's suitable for raspberry / pine64 user that need to remote it but have dynami
    
  + Change this zone id,character after `/zones/` and dns id, character after `/dns_records/` with your dns id
  `https://api.cloudflare.com/client/v4/zones/023e105f4ecef8ad9ca31a8372d0c353/dns_records/0d1123456b5986995abf49123457002cd3`
- 
  ___
-
+# Execution
 To execute this script you can run this in terminal
 `mv cfddns.py /usr/bin/`
 `python /usr/bin/cfddns.py > /dev/null 2>&1 & disown`
 
 To make it autorun
 `echo "python /usr/bin/cfddns.py > /dev/null 2>&1 & disown" >> /etc/rc.local`
+ ___
+ # Notes
+ + i tested it in debian 9 on pine64 with python 2.7
+ + log file `/var/log/cfddns.log`
