@@ -12,7 +12,7 @@ it's suitable for raspberry / pine64 user that need to remote it but have dynami
      -H "X-Auth-Key: c2547eb745079dac9320b638f5e225cf483cc5cfdda41" \
      -H "Content-Type: application/json"
      ```
-     change `name=example.com` with your domain name, `user@example.com` with your email, and `xauthkey` with you api key, also don't forget to change this variable in your script
+     change `name=example.com` with your domain name, `user@example.com` with your email, and `xauthkey` with you api key, also don't forget to change this variable in cfddns.py script
 + Check for zone id in result, example `7c5dae5552338874e5053f2534d2767a`
 + Get DNS ID, run this command on your terminal
 ```  curl -X GET "https://api.cloudflare.com/client/v4/zones/023e105f4ecef8ad9ca31a8372d0c353/dns_records?type=A&name=example.com" \
@@ -24,6 +24,7 @@ it's suitable for raspberry / pine64 user that need to remote it but have dynami
    
  + Change this zone id,character after `/zones/` and dns id, character after `/dns_records/` with your dns id
  `https://api.cloudflare.com/client/v4/zones/023e105f4ecef8ad9ca31a8372d0c353/dns_records/0d1123456b5986995abf49123457002cd3`
+ in cfddns.py script
  ___
 # Execution
 To execute this script you can run this in terminal
