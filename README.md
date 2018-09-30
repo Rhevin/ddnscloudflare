@@ -28,8 +28,11 @@ it's suitable for raspberry / pine64 user that need to remote it but have dynami
  ___
 # Execution
 To execute this script you can run this in terminal
+
 `pip install requests`
+
 `mv cfddns.py /usr/bin/`
+
 `python /usr/bin/cfddns.py > /dev/null 2>&1 & disown`
 
 To make it autorun
