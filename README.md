@@ -1,4 +1,4 @@
-# ddnscloudflare
+# ddns cloudflare
 this will help you change your A record to your cloudflare domain / sub domain by updating it dynamicaly when it's change
 it's suitable for raspberry / pine64 user that need to remote it but have dynamic IP
 
